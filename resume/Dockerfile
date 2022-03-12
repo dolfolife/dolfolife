@@ -31,6 +31,7 @@ RUN rm -rf /src/TinyTeX
 RUN mv /root/.TinyTeX /src/TinyTeX
 RUN ln -s /src/TinyTeX/bin/x86_64-linux/pdflatex /usr/local/bin/pdflatex
 RUN ln -s /src/TinyTeX/bin/x86_64-linux/tlmgr /usr/local/bin/tlmgr
+# TODO this list is prob way too long and I have dependencies I do not need, so I need to clean this
 RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
     && /src/TinyTeX/bin/x86_64-linux/tlmgr install \
         accsupp \
