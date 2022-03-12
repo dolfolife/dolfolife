@@ -1,0 +1,8 @@
+*.xmpi
+*.aux
+*.bcf
+*.xml
+*.log
+*.out
+*.DS_Store
+*.pdf
