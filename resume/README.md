@@ -19,3 +19,5 @@ If you want to copy how this resume is built. Copy this folder, update the [Resu
 ## Contributing
 
 Contributions are always welcome. More often than not I will have some `TODO` statements in the code for things I need help with.
+
+[![Docker Image CI](https://github.com/dolfolife/dolfolife/actions/workflows/docker-image.yml/badge.svg)](https://github.com/dolfolife/dolfolife/actions/workflows/docker-image.yml)
