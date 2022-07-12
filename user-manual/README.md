@@ -69,11 +69,12 @@ Outside the domain of my work I read about 4 main topics: cooking, psychology, s
 
 ## How I learn best
 
-reading after the how after I understand the why
+<!-- reading after the how after I understand the why -->
+TODO
 
 ## Things I struggle with
 
-distractions
+TODO
 
 ## Things I love
 
@@ -95,18 +96,18 @@ One activity that helps me think better is when I can use
 
 ## Other things to know about me
 
-Bruno and Luca
+TODO
 
 ## If I were an animated Gif/meme/animal/song, I would be
 
 <p align="center">
-    <img src="./get-it-pun-dog.jpg" alt=""  height="250">
+    <img src="./get-it-pun-dog.jpg" alt=""  height="350">
 </p>
 
 ## FAVORITE QUOTE
 
 <p align="center">
-    <img src="./The-Little-Prince-Quote.jpg" alt=""  height="250">
+    <img src="./The-Little-Prince-Quote.jpg" alt=""  height="350">
 </p>
 
 ## Thank you
