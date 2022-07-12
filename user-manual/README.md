@@ -10,7 +10,12 @@ The aim is to help you understand me better, to make our relationships easier an
 
 ## Conditions I like to work in
 
-TODO
+- I am most productive in the morning, but I think it is because there are fewer interruptions.
+- I need my coffee before checking any issues, PRs, or slack messages.
+- I have a better thought process when I can stare at a window on an open field.
+- During my time at Pivotal I learned the benefits of a good pairing session, and depending on the task pairing becomes the most effective way to work. But, _if the task is learning I need time with myself_.
+- I feel more aligned with teams where Research/learning is encouraged more than Development.
+- I take long breaks walking outside to recharge.
 
 ## Times/Hours I like to Work
 
@@ -18,17 +23,19 @@ I live in the Central Time **timezone**, and I start my days from 7:30 AM to 8:0
 
 ## Best ways to communicate with me
 
-I have Slack on my phone to keep a channel of communication with my teams, colleges, and friends. You can find me on Kubernetes, Cloud Foundry or Knative Slack by `@dolfo`.
+I have Slack on my phone to keep a channel of communication with my teams, colleagues, and friends. You can find me on Kubernetes, Cloud Foundry, or Knative Slack by `@dolfo`.
 
 ## How I best received feedback
 
-I like written feedback followed with a conversation around topics I might not understand. Also, I like feedback I can act on so I can get better at what I do.
+I like written feedback followed by a conversation around topics I might not understand. Also, I like the feedback I can act on so I can get better at what I do.
 
 ## Things I read
 
-### Work related material
+I enjoy reading, and I am interested in what people have to say about their experiences. I am going to split my reading material into 2 blocks - Work-related and personal interests.
 
-I like to read about patterns, problems, and ways to think other programmers have done in the past. I struggle reading books about an specific language or tool. I have a mixed of audio books and books I like to read over and over again, but here is a list of the top 10 books I can remember on top of my head:
+### Work-related material
+
+I like to read about patterns, problems, and ways to think other programmers have done in the past. I struggle reading books about a specific language or tool. I have a mix of audiobooks and books I like to read over and over again, but here is a list of the top 10 books I can remember on top of my head:
 
 #### Technical Decision Making
 
@@ -49,7 +56,7 @@ I like to read about patterns, problems, and ways to think other programmers hav
 
 ### Personal Interests
 
-Outside the domain of my work I read about 4 main topics: cooking, psychology, science, and personal development. Here is a un-ordered list of books I read about these topics:
+Outside the domain of my work, I read about 4 main topics: cooking, psychology, science, and personal development. Here is a unordered list of books I read about these topics:
 
 #### Personal Development
 
@@ -58,7 +65,7 @@ Outside the domain of my work I read about 4 main topics: cooking, psychology, s
 - [Seize the Fire: Heroism, Duty, and Nelson's Battle of Trafalgar](https://www.amazon.com/Seize-Fire-Heroism-Nelsons-Trafalgar/dp/0060753625)
 - [The Completion Process](https://completionprocess.com/)
 
-#### Cooking
+#### Cooking Books
 
 - [Mastering the Art of French Cooking](https://www.amazon.com/Mastering-Art-French-Cooking-Vol/dp/0375413405/ref=zg_bs_4280_1/132-0793199-0929530?pd_rd_i=0375413405&psc=1)
 
@@ -69,34 +76,39 @@ Outside the domain of my work I read about 4 main topics: cooking, psychology, s
 
 ## How I learn best
 
-<!-- reading after the how after I understand the why -->
-TODO
+I learn best by doing and experimenting with the subject. This applies to ingredients and code. In the case of coding, I love to jump into the documentation to understand why this software was created, and then I jumped to read and play with its source code. It is hard for me to play with tools I do not understand why they were created for.
 
 ## Things I struggle with
 
-TODO
+For me, understanding the why is paramount to keeping myself engaged when I am doing something. I have to start with the `why` to make sure my how makes sense. You will find that issue templates for the repositories I maintain there are a lot of questions to clarify the `why` of the request.
+
+Also, I find myself more often than not doing more things than I can handle in a period of time making me feel like I am not productive. I need to keep a prioritized list of things I need to do and make sure the list does not grow too much.
 
 ## Things I love
 
-There are many things I enjoy doing but I find peace by:
+There are many things I enjoy doing but I find peace by. I will list some of the domains I find myself at peace.
 
 ### Cooking
 
-I love making bread, and baking goods. I often spend a week of work at home just cooking when I need to recharge my batteries.
+I love making bread, and baking goods. I often spend a week of work at home just cooking when I need to recharge my batteries. I love cooking because it is like coding, and you can construct amazing things with the right parameters.
 
 ### The Ocean
 
-There is nothing that will calm me more than the ocean views and its animals.
+There is nothing that will calm me down more than the ocean views. Open fields bring deep thoughts and appreciation for my environment, and the ocean is the best at it.
 
 ### Running
 
-One activity that helps me think better is when I can use
-
-### Silence
+One activity that helps me think better is running. I try to run every day but some days I am too lazy for this important task. It helps my concentration and thought process.
 
 ## Other things to know about me
 
-TODO
+I secretly love JavaScript and its functional programming aspect. I use it in every interview or hack that is too complex to be done in bash.
+
+### What I am working on right now
+
+- I am working with VMware to bring the function programing model into the serverless offering they offer and into the Knative ecosystem.
+- I am thinking to start my blog and write about teams, software design, and cooking.
+- My goal is to bring reactive programing into the portfolio of paradigms people use to build their applications.
 
 ## If I were an animated Gif/meme/animal/song, I would be
 
