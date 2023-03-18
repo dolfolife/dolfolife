@@ -24,7 +24,7 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         image: dolfolife/latex:${{ steps.version.outputs.version }}
-        options: -v ${{ github.workspace }}:/resume --user="$(id -u):$(id -g)" --net=none
+        options: -v ${{ github.workspace }}:/resume --net=none
         shell: bash
         run: |
           echo "Running Script"
