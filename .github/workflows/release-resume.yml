@@ -16,14 +16,14 @@ jobs:
       uses: actions/checkout@v2
     - name: Get version
       id: version
-      run: echo "{version}={$(cat resume/VERSION)}" >> $GITHUB_OUTPUT
+      run: echo "{version}={$(cat resume/VERSION)}" >> $GITHUB_ENV
     - name: Build
       id: build
       uses: addnab/docker-run-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        image: dolfolife/latex:${{ steps.version.outputs.version }}
+        image: dolfolife/latex:${{ env.version }}
         options: -v ${{ github.workspace }}:/resume --net=none
         shell: bash
         run: |
@@ -31,20 +31,20 @@ jobs:
           pushd resume
             pdflatex resume.tex && pdflatex resume.tex
           popd
-          echo "{resume_file}={${{ github.workspace }}/resume/resume.pdf}" >> $GITHUB_OUTPUT
+          echo "{resume_file}={${{ github.workspace }}/resume/resume.pdf}" >> $GITHUB_ENV
     - name: Create Tag
       id: tag
       env:
-        tag: "resume/v${{ steps.version.outputs.version }}"
+        tag: "resume/v${{ env.version }}"
       run: |
         git tag $tag
         git push --tags
-        echo "{tag}=$tag" >> $GITHUB_OUTPUT
+        echo "{tag}=$tag" >> $GITHUB_ENV
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
-        name: Resume v${{ steps.version.outputs.version }}
-        tag_name: ${{ steps.tag.outputs.tag }}
-        files: |
-          ${{ github.workspace }}:/resume/resume.pdf
+        name: Resume v${{ env.version }}
+        tag_name: ${{ env.tag }}
+        resume_location: ${{ env.resume_file }}
+        files: ${resume_location}
         token: ${{ secrets.GITHUB_TOKEN }}
