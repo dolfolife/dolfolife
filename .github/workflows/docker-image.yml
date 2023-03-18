@@ -21,9 +21,7 @@ jobs:
       run: echo ::set-output name=version::$(cat resume/VERSION)
     - name: Build the Docker image
       uses: docker/build-push-action@v2
-      env:
-        version: ${{ steps.version.outputs.version }}
       with:
         context: ./resume
         push: true
-        tags: dolfolife/latex:$version
+        tags: dolfolife/latex:${{ steps.version.outputs.version }}
