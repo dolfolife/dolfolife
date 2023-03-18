@@ -1,10 +1,12 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-    - 'resume/Dockerfile'
+  workflow_dispatch: {}
+
+#  push:
+#    branches: [ main ]
+ #   paths:
+#    - 'resume/Dockerfile'
 jobs:
   build:
     runs-on: ubuntu-latest
