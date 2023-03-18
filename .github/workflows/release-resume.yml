@@ -16,14 +16,16 @@ jobs:
       uses: actions/checkout@v2
     - name: Get version
       id: version
-      run: echo "version=$(cat resume/VERSION_RESUME)" >> $GITHUB_ENV
+      run: |
+        echo "image_version=$(cat resume/VERSION)" >> $GITHUB_ENV
+        echo "resume_version=$(cat resume/VERSION_RESUME)" >> $GITHUB_ENV
     - name: Build
       id: build
       uses: addnab/docker-run-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        image: dolfolife/latex:${{ env.version }}
+        image: dolfolife/latex:${{ env.image_version }}
         options: -v ${{ github.workspace }}/resume:/resume --net=none
         shell: bash
         run: |
@@ -34,7 +36,7 @@ jobs:
     - name: Create Tag
       id: tag
       env:
-        tag: "resume/v${{ env.version }}"
+        tag: "resume/v${{ env.resume_version }}"
       run: |
         git tag $tag
         git push --tags
@@ -42,7 +44,7 @@ jobs:
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
-        name: Resume v${{ env.version }}
+        name: Resume v${{ env.resume_version }}
         tag_name: ${{ env.tag }}
         files: ${{ github.workspace }}/resume/resume.pdf
         token: ${{ secrets.GITHUB_TOKEN }}
