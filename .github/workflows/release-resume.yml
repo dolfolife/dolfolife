@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Get version
       id: version
-      run: echo "{version}={$(cat resume/VERSION)}" >> $GITHUB_ENV
+      run: echo "version=$(cat resume/VERSION)" >> $GITHUB_ENV
     - name: Build
       id: build
       uses: addnab/docker-run-action@v3
@@ -31,7 +31,7 @@ jobs:
           pushd resume
             pdflatex resume.tex && pdflatex resume.tex
           popd
-          echo "{resume_file}={${{ github.workspace }}/resume/resume.pdf}" >> $GITHUB_ENV
+          echo "resume_file=${{ github.workspace }}/resume/resume.pdf" >> $GITHUB_ENV
     - name: Create Tag
       id: tag
       env:
@@ -39,7 +39,7 @@ jobs:
       run: |
         git tag $tag
         git push --tags
-        echo "{tag}=$tag" >> $GITHUB_ENV
+        echo "tag=$tag" >> $GITHUB_ENV
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
