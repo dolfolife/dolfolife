@@ -1,10 +1,9 @@
 name: Build and Release Resume
 on:
-  workflow_dispatch: {}
-#  push:
-#    branches: [ main ]
-#    paths:
-#    - 'resume/resume.tex'
+  push:
+    branches: [ main ]
+    paths:
+    - 'resume/resume.tex'
 jobs:
   create-release:
     runs-on: ubuntu-latest
