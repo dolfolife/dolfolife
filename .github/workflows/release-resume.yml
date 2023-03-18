@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Get version
       id: version
-      run: echo "{version}=$(cat resume/VERSION)" >> $GITHUB_OUTPUT
+      run: echo "{version}={$(cat resume/VERSION)}" >> $GITHUB_OUTPUT
     - name: Build
       id: build
       uses: addnab/docker-run-action@v3
