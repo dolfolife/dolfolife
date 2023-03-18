@@ -20,8 +20,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
   libldap2-dev \
   libssl-dev
 
-
-
 ENV PYTHONUNBUFFERED 1
 ENV DEBIAN_FRONTEND noninteractive
 
