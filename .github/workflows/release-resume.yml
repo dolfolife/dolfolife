@@ -28,8 +28,10 @@ jobs:
         shell: bash
         run: |
           echo "Running Script"
-          pdflatex resume.tex && pdflatex resume.tex
-          echo "::set-output name=resume_file::$PWD/resume.pdf"
+          pushd resume
+            pdflatex resume.tex && pdflatex resume.tex
+          popd
+          echo "::set-output name=resume_file::resume/resume.pdf"
     - name: Create Tag
       id: tag
       env:
