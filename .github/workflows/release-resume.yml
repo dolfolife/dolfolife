@@ -30,8 +30,8 @@ jobs:
           echo "Running Script"
           pushd /resume
             pdflatex resume.tex && pdflatex resume.tex
+            echo "resume_location=$(readlink -f resume.pdf)" >> $GITHUB_ENV
           popd
-          echo "resume_file=/resume/resume.pdf" >> $GITHUB_ENV
     - name: Create Tag
       id: tag
       env:
@@ -45,6 +45,5 @@ jobs:
       with:
         name: Resume v${{ env.version }}
         tag_name: ${{ env.tag }}
-        resume_location: ${{ env.resume_file }}
-        files: ${resume_location}
+        files: ${{ env.resume_location }}
         token: ${{ secrets.GITHUB_TOKEN }}
