@@ -30,7 +30,9 @@ jobs:
           echo "Running Script"
           pushd /resume
             pdflatex resume.tex && pdflatex resume.tex
-            echo "resume_location=$(readlink -f resume.pdf)" >> $GITHUB_ENV
+            ls
+            echo 'resume_location="$(readlink -f resume.pdf)"' >> $GITHUB_ENV
+            echo $resume_location
           popd
     - name: Create Tag
       id: tag
