@@ -26,10 +26,10 @@ jobs:
         image: dolfolife/latex:${{ steps.version.outputs.version }}
         options: -v ${{ github.workspace }}:/resume --user="$(id -u):$(id -g)" --net=none
         shell: bash
-      run: |
-        echo "Running Script"
-        pdflatex resume.tex && pdflatex resume.tex
-        echo "::set-output name=resume_file::$PWD/resume.pdf"
+        run: |
+          echo "Running Script"
+          pdflatex resume.tex && pdflatex resume.tex
+          echo "::set-output name=resume_file::$PWD/resume.pdf"
     - name: Create Tag
       id: tag
       env:
