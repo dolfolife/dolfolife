@@ -31,7 +31,7 @@ jobs:
           pushd /resume
             pdflatex resume.tex && pdflatex resume.tex
           popd
-          echo "resume_file=${{ github.workspace }}/resume/resume.pdf" >> $GITHUB_ENV
+          echo "resume_file=/resume/resume.pdf" >> $GITHUB_ENV
     - name: Create Tag
       id: tag
       env:
