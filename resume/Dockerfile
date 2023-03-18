@@ -81,7 +81,6 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
         ragged2e \
         rerunfilecheck \
         roboto \
-        tcolorbox \
         textpos \
         url \
         xcolor \
