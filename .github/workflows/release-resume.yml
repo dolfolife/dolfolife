@@ -47,5 +47,5 @@ jobs:
       with:
         name: Resume v${{ env.version }}
         tag_name: ${{ env.tag }}
-        files: ${{ env.resume_loc }}
+        files: ${{ github.workspace }}/resume/resume.pdf
         token: ${{ secrets.GITHUB_TOKEN }}
