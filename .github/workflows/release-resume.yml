@@ -24,11 +24,11 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         image: dolfolife/latex:${{ env.version }}
-        options: -v "${{ github.workspace }}/resume":/resume --net=none
+        options: -v ${{ github.workspace }}/resume:/resume --net=none
         shell: bash
         run: |
           echo "Running Script"
-          pushd resume
+          pushd /resume
             pdflatex resume.tex && pdflatex resume.tex
           popd
           echo "resume_file=${{ github.workspace }}/resume/resume.pdf" >> $GITHUB_ENV
