@@ -27,3 +27,11 @@ jobs:
         context: ./resume
         push: true
         tags: dolfolife/latex:${{ steps.version.outputs.version }}
+    - name: Create Tag
+      id: tag
+      env:
+        tag: "latex-dockerfile/v${{ env.version }}"
+      run: |
+        git tag $tag
+        git push --tags
+        echo "tag=$tag" >> $GITHUB_ENV

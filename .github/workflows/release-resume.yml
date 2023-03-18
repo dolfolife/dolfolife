@@ -4,6 +4,7 @@ on:
     branches: [ main ]
     paths:
     - 'resume/resume.tex'
+    - 'resume/VERSION_RESUME'
 jobs:
   create-release:
     runs-on: ubuntu-latest
@@ -15,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Get version
       id: version
-      run: echo "version=$(cat resume/VERSION)" >> $GITHUB_ENV
+      run: echo "version=$(cat resume/VERSION_RESUME)" >> $GITHUB_ENV
     - name: Build
       id: build
       uses: addnab/docker-run-action@v3
