@@ -28,18 +28,18 @@ jobs:
           pdflatex resume.tex && pdflatex resume.tex
           echo "::set-output name=resume_file::$PWD/resume.pdf"
     - name: Create Tag
-        id: tag
-        env:
-          tag: "resume/v${{ steps.version.outputs.version }}"
-        run: |
-          git tag $tag
-          git push --tags
-          echo "::set-output name=tag::$tag"
+      id: tag
+      env:
+        tag: "resume/v${{ steps.version.outputs.version }}"
+      run: |
+        git tag $tag
+        git push --tags
+        echo "::set-output name=tag::$tag"
     - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: Resume v${{ steps.version.outputs.version }}
-          tag_name: ${{ steps.tag.outputs.tag }}
-          files: |
-            ${{ steps.build.outputs.resume_file }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Resume v${{ steps.version.outputs.version }}
+        tag_name: ${{ steps.tag.outputs.tag }}
+        files: |
+          ${{ steps.build.outputs.resume_file }}
+        token: ${{ secrets.GITHUB_TOKEN }}
