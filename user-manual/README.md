@@ -11,11 +11,11 @@ The aim is to help you understand me better, to make our relationships easier an
 ## Conditions I like to work in
 
 - I am most productive in the morning, but I think it is because there are fewer interruptions.
-- I need my coffee before checking any issues, PRs, or slack messages.
+- I need my coffee before checking any issues, PRs, or Slack messages.
 - I have a better thought process when I can stare at a window on an open field.
 - During my time at Pivotal I learned the benefits of a good pairing session, and depending on the task pairing becomes the most effective way to work. But, _if the task is learning I need time with myself_.
 - I feel more aligned with teams where Research/learning is encouraged more than Development.
-- I take long breaks walking outside to recharge.
+- I take long breaks while walking outside to recharge.
 
 ## Times/Hours I like to Work
 
@@ -35,19 +35,19 @@ I enjoy reading, and I am interested in what people have to say about their expe
 
 ### Work-related material
 
-I like to read about patterns, problems, and ways to think other programmers have done in the past. I struggle reading books about a specific language or tool. I have a mix of audiobooks and books I like to read over and over again, but here is a list of the top 10 books I can remember on top of my head:
+I like to read about patterns, problems, and ways to think other programmers have done in the past. I struggle reading books about a specific language or tool. I have a mix of audiobooks and books I like to read over and over again, but here is a list of the top 10 books I can remember off top of my head:
 
 #### Technical Decision Making
 
 - [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
-- [Designing Data Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+- [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 - [The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
 - [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book)
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
 
 #### Management
 
-- [The Manager's path: A Guide for Tech Leaders Navigating Growth and Change](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897)
+- [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897)
 - [An Elegant Puzzle: Systems of Engineering Management](https://www.amazon.com/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186/ref=pd_lpo_1?pd_rd_i=1732265186&psc=1)
 - [Resilient Management](https://resilient-management.com/)
 - [Team Topologies](https://teamtopologies.com/)
@@ -60,7 +60,7 @@ Outside the domain of my work, I read about 4 main topics: cooking, psychology, 
 
 #### Personal Development
 
-- [12 Rules for life](https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0345816021)
+- [12 Rules for Life](https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0345816021)
 - [Beyond Order: 12 More Rules for Life](https://www.amazon.com/Beyond-Order-More-Rules-Life/dp/0593084640)
 - [Seize the Fire: Heroism, Duty, and Nelson's Battle of Trafalgar](https://www.amazon.com/Seize-Fire-Heroism-Nelsons-Trafalgar/dp/0060753625)
 - [The Completion Process](https://completionprocess.com/)
@@ -82,7 +82,7 @@ I learn best by doing and experimenting with the subject. This applies to ingred
 
 For me, understanding the why is paramount to keeping myself engaged when I am doing something. I have to start with the `why` to make sure my how makes sense. You will find that issue templates for the repositories I maintain there are a lot of questions to clarify the `why` of the request.
 
-Also, I find myself more often than not doing more things than I can handle in a period of time making me feel like I am not productive. I need to keep a prioritized list of things I need to do and make sure the list does not grow too much.
+Also, I find myself more often than not doing more things than I can handle at a time making me feel like I am not productive. I need to keep a prioritized list of things I need to do and make sure the list does not grow too much.
 
 ## Things I love
 
@@ -106,9 +106,9 @@ I secretly love JavaScript and its functional programming aspect. I use it in ev
 
 ### What I am working on right now
 
-- I am working with VMware to bring the function programing model into the serverless offering they offer and into the Knative ecosystem.
+- I am working with VMware to bring the functional programming model into the serverless offering they offer and into the Knative ecosystem.
 - I am thinking to start my blog and write about teams, software design, and cooking.
-- My goal is to bring reactive programing into the portfolio of paradigms people use to build their applications.
+- My goal is to bring reactive programming into the portfolio of paradigms people use to build their applications.
 
 ## If I were an animated Gif/meme/animal/song, I would be
 
