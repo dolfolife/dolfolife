@@ -4,7 +4,7 @@
 
 - I am a Software Engineer and Engineering Manager with 10+ years of experience in the industry.
 - You can find my latest Resume at [Releases](https://github.com/dolfolife/dolfolife/releases).
-- If you want to work with me or give me feedback I wrote a [User Manual](user-manual\README.md) to help you understand me better.
+- If you want to work with me or give me feedback I wrote a [User Manual](user-manual/README.md) to help you understand me better.
 
 ## What I am working on right now
 
