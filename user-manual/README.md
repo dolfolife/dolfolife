@@ -55,7 +55,7 @@ You can find some of my recommendations on my [Bookshelf](../BOOKSHELF.md).
 
 ## Other things to know about me
 
-I secretly love JavaScript (now TypeScript made it better with types and generics) and its functional programming aspect. I use it in every interview or hack that is too complex to be done in bash.
+I secretly love TypeScript and its functional programming aspect. I use it in every interview or hack that is too complex to be done in bash.
 
 ## If I am not working, I am...
 
