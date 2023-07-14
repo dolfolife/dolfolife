@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
+% This is a CV template created using altacv.cls
 % (v1.6.4, 13 Nov 2021) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
 %
 %% It may be distributed and/or modified under the
@@ -42,15 +42,15 @@
 % Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{DarkPastelBlue}{HTML}{1E3F66}
+\definecolor{PastelBlue}{HTML}{779ECB}
 \definecolor{GoldenEarth}{HTML}{E7D192}
 \colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
+\colorlet{tagline}{PastelBlue}
+\colorlet{heading}{DarkPastelBlue}
 \colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
+\colorlet{subheading}{PastelBlue}
+\colorlet{accent}{PastelBlue}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
@@ -87,21 +87,24 @@
 \end{fullwidth}
 %% Depending on your tastes, you may want to make fonts of itemized environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
+\cvsection{TL;DR}
+\cvevent{Rodolfo is an Engineering Manager with a decade of experience leading teams and is passionate about career goals and motivation.}{}{}{}
+\cvevent{He is working with teams to build application platforms on Kubernetes.}{}{}{}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+\columnratio{0.5}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
+
 \cvsection{Experience}
 
 \cvevent{Software Engineering Manager}{VMware}{Jan 2020 -- Ongoing}{Austin, Texas}
 \begin{itemize}
-\item Manage a team to deliver a functional programming model experience on Kubernetes clusters.
-\item Manage a team to build an eventing runtime for Tanzu Application Platform and Knative.
-\item Manage a team to expose DORA metrics of teams working on deploying their workloads into Kubernetes clusters.
-\item Align open source efforts with commercial offerings at VMware.
+\item Delivering a functional programming model experience on Kubernetes.
+\item building an eventing runtime for Kubernetes.
+\item Building the system to aggregate DORA metrics for internal teams working on Kubernetes clusters.
 \end{itemize}
 
 \divider
@@ -116,27 +119,35 @@
 
 \cvevent{Principal Software Engineer}{Pivotal}{May 2016 -- December 2018}{Chicago, IL}
 \begin{itemize}
-\item Helped to build teams around core practices of XP and agile methodologies.
+\item Helped to build teams around core practices of XP and Agile methodologies.
 \item Architected and led solutions to modernize legacy applications into a cloud-based architecture.
 \end{itemize}
 
+\divider
+
+\cvevent{Several Software Engineering positions}{Sears,Enova, and others}{2009 -- 2016}{Chicago, IL}
+\begin{itemize}
+\item Focus on Web application development products for small teams to big organizations.
+\item Built products from scratch and led projects of different sizes and domains.
+\end{itemize}
+
 \medskip
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
 
 \cvsection{A Day of My Life}
 
 \wheelchart{1.5cm}{0.5cm}{%
   6/8em/accent!30/Planning the future of our projects,
   3/8em/accent!40/Learning new technologies and management skills,
-  8/8em/accent!60/{Coaching, mentoring, and sponsoring reports},
+  8/8em/accent!60/{Coaching, mentoring, and sponsoring teams},
   2/10em/accent/Coffee,
   3/10em/accent/Coding,
   2/6em/accent!20/Spending time with family
 }
-
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
-\switchcolumn
-
 \cvsection{My Life Philosophy}
 
 \begin{quote}
@@ -161,11 +172,11 @@
 
 \cvtag{Golang}
 \cvtag{Distributed Systems}\\
+\cvtag{TypeScript}
 \cvtag{Kubernetes}
 \cvtag{Serverless}\\
 \cvtag{Streaming}
 \cvtag{Event Driven Architectures}\\
-\cvtag{CI/CD pipelines}
 
 \medskip
 
