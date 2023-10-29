@@ -3,7 +3,8 @@
 ## Who am I?
 
 - Dolfo is an Engineering Manager with a decade of experience leading teams and is passionate about career goals and motivation. He is working with engineers to deliver cloud-native platforms.
-- You can find his latest Resume at [Releases](https://github.com/dolfolife/dolfolife/releases).- If you want to work with Dolfo or give him feedback you can find tips on his [User Manual](user-manual/README.md).
+- You can find his latest Resume at [Releases](https://github.com/dolfolife/dolfolife/releases).
+- If you want to work with Dolfo or give him feedback you can find tips on his [User Manual](user-manual/README.md).
 
 ## What Dolfo is working on right now
 
