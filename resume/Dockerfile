@@ -84,6 +84,7 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
         rerunfilecheck \
         roboto \
         textpos \
+        tcolorbox \
         url \
         xcolor \
         xmpincl \
