@@ -77,6 +77,7 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
         parskip \
         pdfx \
         pgf \
+        pgfplots \
         psnfss \
         ragged2e \
         rerunfilecheck \
