@@ -20,13 +20,13 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Get version
       id: version
-      run: echo ::set-output name=version::$(cat resume/VERSION)
+      run: echo "version=$(cat resume/VERSION)" >> $GITHUB_ENV
     - name: Build the Docker image
       uses: docker/build-push-action@v2
       with:
         context: ./resume
         push: true
-        tags: dolfolife/latex:${{ steps.version.outputs.version }}
+        tags: dolfolife/latex:${{ env.version }}
     - name: Create Tag
       id: tag
       env:
