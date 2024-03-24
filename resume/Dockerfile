@@ -90,6 +90,7 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
 
 RUN pip install pygments
 
+
 WORKDIR /resume
 VOLUME ["/resume"]
 # Default command
