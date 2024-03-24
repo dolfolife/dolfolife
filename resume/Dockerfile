@@ -49,6 +49,7 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
         dashrule \
         enumitem \
         environ \
+        everyshi \
         extsizes \
         fancyhdr \
         fancyvrb \
