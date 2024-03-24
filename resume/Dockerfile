@@ -23,7 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
 ENV PYTHONUNBUFFERED 1
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" | sh
+RUN wget -qO- https://yihui.name/gh/tinytex/tools/install-unx.sh | sh
 RUN mkdir /src
 RUN rm -rf /src/TinyTeX
 RUN mv /root/.TinyTeX /src/TinyTeX
