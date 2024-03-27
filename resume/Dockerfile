@@ -85,7 +85,7 @@ RUN /src/TinyTeX/bin/x86_64-linux/tlmgr path add \
         roboto \
         textpos \
         tcolorbox \
-        tikzfill.image \
+        tikzfill \
         url \
         xcolor \
         xmpincl \
