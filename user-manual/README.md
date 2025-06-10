@@ -24,7 +24,7 @@ Thank you for taking the time to read my user manual. The purpose of this guide 
 
 - I use Slack to keep in touch with my team, colleagues, and friends. You can find me on Kubernetes, Cloud Foundry, or Knative Slack by mentioning @dolfo.
 
-## How I best received feedback
+## How I best receive feedback
 
 - I appreciate specific and actionable feedback that helps me improve my work.
 - I prefer written feedback followed by a conversation, especially if there are any topics that I might not fully understand.

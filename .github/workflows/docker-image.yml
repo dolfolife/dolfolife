@@ -21,6 +21,12 @@ jobs:
     - name: Get version
       id: version
       run: echo "version=$(cat resume/VERSION)" >> $GITHUB_ENV
+
+    - name: Lint Dockerfile
+      uses: hadolint/hadolint-action@v1.5.0
+      with:
+        dockerfile: resume/Dockerfile
+        failure-threshold: warning
     - name: Build the Docker image
       uses: docker/build-push-action@v2
       with:

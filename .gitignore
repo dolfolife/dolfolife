@@ -6,4 +6,4 @@
 *.out
 *.DS_Store
 *.pdf
-*.vscode
+.vscode/
