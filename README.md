@@ -11,3 +11,7 @@
 - Dolfo is working with VMware Tanzu to bring a functional programming model and an eventing runtime into the serverless offering they offer and into the Knative ecosystem.
 - Dolfo is thinking to start my blog and write about teams, software design, and cooking. [My Blog](https://dolfo.codes/posts).
 - His main goal is to bring reactive programming into the portfolio of paradigms people use to build their applications.
+
+## Repository Overview
+
+For a tour of this repository's structure and key files, see [CODEBASE_OVERVIEW.md](./CODEBASE_OVERVIEW.md). It explains the purpose of each directory, how the résumé is built, and how automation is configured.
