@@ -8,7 +8,11 @@ This is a guide to Dolfo's work-life style; a very quick tour of my personality 
 
 Thank you for taking the time to read my user manual. The purpose of this guide is to help you understand my work style, personality, and preferences so that we can collaborate more effectively and enjoyably.
 
-**About Me:** Software Engineering Leader with 15+ years of experience building cloud-native platforms. CKA and CKS certified. Former Engineering Manager at VMware Tanzu, where I led teams building Eventing Runtime, Function Buildpacks, and DORA metrics systems. Currently learning AI Agentic flows using LangChain and LangGraph.
+**About Me:** 
+I am a Software Engineering Leader with over 15 years of experience building cloud-native platforms and leading high-performing teams. 
+- **Leadership:** Previously Engineering Manager at GoDaddy and VMware, where I managed teams of 13+ engineers and delivered critical services like Authorization and Eventing Runtimes.
+- **Impact:** transform teams by driving operational excellence—cutting Sev-1 incidents by 40%, reducing MTTR, and improving lead time via blameless post-mortems.
+- **Tech:** I am a Knative maintainer and CKA/CKS certified, with deep expertise in Kubernetes, Distributed Systems, and Event-Driven Architectures.
 
 ## Conditions I like to work in
 
@@ -38,10 +42,10 @@ I get excited when I get feedback that helps me improve my work. It is a sign of
 
 ## Leadership Style
 
-- I strive to be a servant leader who helps team members grow and learn.
-- I work hard to ensure that teams are aligned on the same goals and working towards a common direction.
-- I believe that the mental health of the team is of utmost importance, and I focus on building a cohesive team where members trust and support each other.
-- Throughout my career managing teams of 10+ engineers, I've implemented practices like blameless postmortems, coached technical leads, and driven organizational change that scales.
+- **Servant Leadership:** I strive to be a servant leader who helps team members grow and learn, removing blockers and empowering them to own their success.
+- **Alignment:** I work hard to ensure that teams are aligned on the same goals (Goals, metrics, and knowledge) and working towards a common direction.
+- **Psychological Safety:** I believe that the mental health of the team is of utmost importance. I focus on building a cohesive team where members trust and support each other.
+- **Operational Excellence:** I drive cultures of improvement. For example, at VMware, I reduced Sev-1 incidents by 40% and increased deployment frequency by 50% for 80+ teams through rigorous but blameless post-mortems and better observability.
 
 ## How I learn best
 
@@ -53,10 +57,10 @@ I get excited when I get feedback that helps me improve my work. It is a sign of
 
 ## Things I read
 
-- In terms of software engineering, I am interested in learning about patterns, problem-solving approaches, and ways of thinking that other programmers have used in the past.
-- Currently diving deep into AI Agentic flows, LangChain, and LangGraph to understand how to build intelligent, autonomous systems that can reason and take action.
-- I am focused on team cohesion, coaching, mentoring, and leading teams in various projects. I also read books on leadership, management, and organizational behavior.
-- Outside of work, I enjoy reading about personal development, psychology, science, and cooking.
+- **Software Engineering:** I am interested in learning about patterns, problem-solving approaches, and ways of thinking that other programmers have used in the past.
+- **AI & Agents:** Currently diving deep into AI Agentic flows, LangChain, and LangGraph to understand how to build intelligent, autonomous systems.
+- **Leadership:** I am focused on team cohesion, coaching, mentoring, and leading teams. I read heavily on leadership, management, and organizational behavior to support my role as a motivator and empathetic leader.
+- **Personal:** Outside of work, I enjoy reading about personal development, psychology, science, and cooking.
 
 You can find some of my recommendations on my [Bookshelf](../BOOKSHELF.md).
 
