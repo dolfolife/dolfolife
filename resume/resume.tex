@@ -23,6 +23,8 @@
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
+\usepackage{tikz}
+\usetikzlibrary{chains,positioning,shapes.geometric,calc,arrows.meta,shadows}
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -56,7 +58,7 @@
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\personalinfofont}{\normalfont}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
@@ -85,13 +87,19 @@
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
+\vspace{-0.5em}
 \small
-Software Engineering Leader with 15+ years building cloud-native platforms. Led Kubernetes and Knative components at VMware
-and Pivotal, managed teams of 10+ engineers, and contributed as an open-source maintainer. CKA and CKS certified with expertise in
-distributed systems, event-driven architectures, and platform engineering.
-\medskip
-%% Depending on your tastes, you may want to make fonts of itemized environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
+\divider
+\small
+\begin{itemize}
+    \item \textbf{Engineering Leadership:} Led Platform Engineering at GoDaddy and VMware, delivering critical Authorization services and driving operational excellence that reduced Sev-1 incidents by 40\%.
+    \item \textbf{Technical Architecture:} Designed Fever's automation services reducing support tickets by 40\% via self-service flows, and architected VMware's observability platform boosting deployment frequency by 50\% for 80+ teams.
+    \item \textbf{Cloud-Native Expertise:} Knative maintainer and CKA/CKS certified. Built Pivotal's networking layer achieving 99.999\% uptime and spearheaded organizational Kubernetes adoption for 100+ engineers.
+\end{itemize}
+
+\vspace{1em}
+
+\vspace{0.5em}
 
 %% Set the left/right column width ratio to 6:4.
 \columnratio{0.5}
@@ -100,113 +108,198 @@ distributed systems, event-driven architectures, and platform engineering.
 % break across pages if things get too long.
 \begin{paracol}{2}
 
-\cvsection{Experience}
-\cvevent{}{Senior Software Engineer - Fever}{ Jul 2024 -- Present }{Remote, Spain}
-\begin{itemize}
-  \item Designed and developed end-to-end ticketing platform serving millions of users and processing 850,000 transactions daily, spanning backend APIs (Python), web clients (Angular), and native mobile applications (Swift/Kotlin).
-  \item Mentored junior engineers on system design, code quality, and cloud-native development practices through technical reviews and pair programming sessions.
-  \item Partnered with Product, Design, and Mobile teams to deliver customer-facing features with measurable improvements in conversion rates and user satisfaction.
-\end{itemize}
-\divider
-\cvevent{}{Software Engineering Manager - VMware}{ Jan 2020 -- Feb 2024 }{Remote, US}
-\begin{itemize}
-  \item Owned Eventing Runtime and Function Buildpacks for Kubernetes-based application platform from inception to GA, enabling Tanzu Application Platform applications to reduce lead time for changes and decrease MTTR.
-  \item Built and launched DORA metrics observability system across 80 engineering teams, integrating GitHub, CI/CD pipelines, and incident data; surfaced bottlenecks that drove 50\% increase in deployment frequency within 4 quarters.
-  \item Grew and developed team of 13 engineers including 3 technical leads; implemented blameless postmortems and incident review processes, reducing Sev-1 incidents by 40\% year-over-year.
-  \item Served as maintainer for Knative Eventing and Functions for Knative open-source projects; delivered 2 major releases annually, drove community RFCs, and reviewed 100+ pull requests.
-\end{itemize}
-\divider
+% ----- LEFT COLUMN -----
+\cvsection{Career Journey}
+\begin{tikzpicture}[
+    y=1.2cm, % Vertical space between rows
+    x=1cm,   % Base unit
+    font=\sffamily\small,
+    scale=0.95, transform shape
+]
 
-\cvevent{}{Principal Engineer - Software Engineering Manager - Pivotal}{May 2016 -- Dec 2019}{CA, US}
-\begin{itemize}
-  \item Directed 6-10 engineers responsible for networking components (ingress routers, container-to-container networking) supporting Cloud Foundry platform with 20,000+ applications; achieved 99.999\% uptime SLA with p99 latency under 300--500 ms.
-  \item Designed and implemented Kubernetes cluster queue system for testing infrastructure, reducing cluster wait times by 90\% and cutting annual testing infrastructure costs across 80+ teams.
-  \item Spearheaded organization-wide Kubernetes adoption program with training sessions for 100+ engineers, accelerating Cloud Foundry to Kubernetes migration and reducing onboarding time by 60\%.
-  \item Drove integration of new products into existing Cloud Foundry ecosystem; oversaw migration of legacy monolithic applications to microservices architecture, improving deployment velocity by 70\%+.
-  \item Scaled engineering organization from 4 to 80+ engineers across 10+ teams; established practices, code review standards, and CI/CD pipelines that became organizational templates.
-\end{itemize}
+% Styles
+\tikzset{
+    jobnode/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=none,
+        fill=white,
+        line width=0.5pt,
+        align=center,
+        font=\scriptsize,
+        inner sep=4pt,
+        anchor=west
+    },
+    roletitle/.style={
+        anchor=east,
+        align=right,
+        color=heading,
+        font=\bfseries
+    }
+}
 
-\divider
+% --- ROW 4: ENGINEERING MANAGER ---
+\node[roletitle] at (0, 3) {Engineering Manager};
 
-\cvevent{}{Sears Holdings, Enova International, and Early Career}{2009 -- 2016}{IL, US}
-\begin{itemize}
-  \item Advanced from Software Engineer to Lead Developer across multiple organizations, demonstrating consistent growth in technical leadership and system design capabilities.
-  \item Supervised 8 engineers building fintech applications processing \$1M+ in transactions daily; established code review standards and coached junior developers on best practices.
-  \item Engineered data-intensive e-commerce platform components handling 2M+ daily requests; optimized database queries reducing response times by 40\% and improving overall system performance.
-  \item Delivered full-stack web applications and RESTful APIs; gained foundational experience in agile methodologies, software development lifecycle, and production operations.
-\end{itemize}
+% Pivotal (EM)
+\node[jobnode] (pivotal_em) at (0.2, 3) {
+    \includegraphics[height=1.8em]{pivotal.png}\\
+    Pivotal
+};
+% VMware (Big) - Next to Pivotal
+\node[jobnode, xshift=4pt, anchor=south west] (vmware) at (pivotal_em.south east) {
+    \includegraphics[height=2.5em]{vmware.png}\\
+    VMware
+};
+% GoDaddy - Next to VMware
+\node[jobnode, xshift=4pt, anchor=south west] (godaddy) at (vmware.south east) {
+    \includegraphics[height=1.8em]{godaddy.png}\\
+    GoDaddy
+};
+
+% --- ROW 3: PRINCIPAL SOFTWARE ENGINEER ---
+\node[roletitle] at (0, 2) {Principal Software Engineer};
+
+% Pivotal (PE)
+\node[jobnode] (pivotal_pe) at (0.2, 2) {
+    \includegraphics[height=1.8em]{pivotal.png}\\
+    Pivotal
+};
+
+% --- ROW 2: SENIOR SOFTWARE ENGINEER ---
+\node[roletitle] at (0, 1) {Senior Software Engineer};
+
+% Sears (Small)
+\node[jobnode] (sears) at (0.2, 1) {
+    \includegraphics[height=0.8em]{sears.png}\\
+    Sears
+};
+% Enova - Next to Sears
+\node[jobnode, xshift=4pt, anchor=south west] (enova) at (sears.south east) {
+    \includegraphics[height=1.8em]{enova.png}\\
+    Enova
+};
+% Purchasing Platform - Next to Enova
+\node[jobnode, xshift=4pt, anchor=south west] (pp) at (enova.south east) {
+    \includegraphics[height=1.2em]{purchasingplatform.png}\\
+    Purchasing\\Platform
+};
+% Fever - Next to PP
+\node[jobnode, xshift=4pt, anchor=south west] (fever) at (pp.south east) {
+    \includegraphics[height=1.2em]{fever.png}\\
+    Fever
+};
+
+% --- ROW 1: SOFTWARE ENGINEER ---
+\node[roletitle] at (0, 0) {Software Engineer};
+
+% Insperity
+\node[jobnode] (insperity) at (0.2, 0) {
+    \includegraphics[height=1.8em]{insperity.png}\\
+    Insperity
+};
+% Talpor - Next to Insperity
+\node[jobnode, xshift=4pt, anchor=south west] (talpor) at (insperity.south east) {
+    \includegraphics[height=1.2em]{talpor.png}\\
+    Talpor
+};
+
+\end{tikzpicture}
+\par
+\vspace{1em}
+
+\cvsection{Expertise \& Tooling}
+
+\cvsubsection{Leadership \& Strategy}
+\cvtag{Engineering Management}
+\cvtag{Team Building}
+\cvtag{Product Strategy}
+\cvtag{Technical Direction}
+\cvtag{Mentorship}
+\cvtag{Operational Excellence}
 
 \medskip
 
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
+\cvsubsection{Architecture \& Cloud}
+\cvtag{Domain Driven Design}
+\cvtag{Kubernetes}
+\cvtag{Platform Engineering}
+\cvtag{Event-Driven Arch.}
+\cvtag{Distributed Systems}
+\cvtag{Authorization/OAuth}
+
+
+\medskip
+
+\cvsubsection{Processes \& Practices}
+\cvtag{Agile Methodologies}
+\cvtag{CI/CD Pipelines}
+\cvtag{DORA Metrics}
+\cvtag{Incident Management}
+\cvtag{Blameless Post-Mortems}
+
+\medskip
+
+\cvsubsection{Technology Stack}
+\cvtag{Go (Golang)}
+\cvtag{Python}
+\cvtag{Java/Kotlin}
+\cvtag{JavaScript/TypeScript}
+
+
+\vspace{1.5em}
+
+\cvsection{Education \& Certifications}
+\cvevent{CKA, CKS}{The Linux Foundation}{Valid: 2024 -- 2027}{}
+\cvevent{Computer Engineering}{Simon Bolivar University}{2005 -- 2010 | Major on AI and ML}{}
+
+% ----- RIGHT COLUMN -----
 \switchcolumn
 
 \cvsection{A Day of My Life}
 
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!40/Strategizing and Planning with Product and Leadership,
-  3/8em/accent!30/Learning new technologies and management skills,
-  8/8em/accent!60/{Building, Coaching, and mentoring teams},
-  1/10em/accent/Coffee,
-  5/10em/accent/Coding projects,
-  1/6em/accent!20/Spending time with family
+% Adapting height to save space if needed
+\wheelchart{1.2cm}{0.4cm}{%
+  6/8em/accent!40/Strategy,
+  3/8em/accent!30/Learning,
+  8/8em/accent!60/Leading,
+  1/6em/accent/Coffee,
+  5/8em/accent/Coding,
+  1/6em/accent!20/Family
 }
+
+\cvsection{Key Achievements}
+
+\cvachievement{\faShield*}{Platform Security}{Delivered core OAuth services and improved security posture at GoDaddy.}
+
+\divider
+
+\cvachievement{\faChartLine}{High Scale Systems}{Architected high-scale platforms at Fever (850k tx/day), GoDaddy, and VMware.}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Transformation}{Reduced Sev-1 incidents by 40\% and increased deployments by 50\% at VMware.}
+
+\divider
+
+\cvachievement{\faCode}{Open Source}{Maintainer for Knative; delivered major releases and driven RFCs.}
+\divider
+
+\medskip
+
+\cvsection{Strengths}
+\cvtag{Strategic Leadership}
+\cvtag{Polyglot Engineer}
+\cvtag{System Design}
+\cvtag{Empathetic}
+\cvtag{Motivator}
+
 \cvsection{My Life Philosophy}
 
 \begin{quote}
 ``Goals, metrics, and knowledge are the foundation to move forward''
 \end{quote}
 
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Managed 2 Teams Simultaneously}{Successfully balanced leadership of two teams with different objectives, harmonizing varied efforts towards shared organizational goals.}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Team Alignment}{Fostered strong collaboration and efficiency by establishing clear communication channels and ensuring shared vision across all team members.}
-
-\cvsection{Strengths}
-
-\cvtag{Empathetic leadership mindset}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{Golang}
-\cvtag{JavaScript}
-\cvtag{Distributed Systems}\\
-\cvtag{Kubernetes}
-\cvtag{Serverless}
-\cvtag{Cloud Computing}\\
-\cvtag{Streaming}
-\cvtag{System Design}
-\cvtag{Event-Driven Architectures}\\
-
-\medskip
-
-
-\cvsection{Leadership \& Management}
-
-\cvtag{Team Building}
-\cvtag{Coaching}
-\cvtag{Mentoring}
-\cvtag{Org Design}
-\cvtag{Roadmapping}
-\cvtag{OKRs}
-\cvtag{Cross-functional Alignment}
-\cvtag{Stakeholder Management}
-\cvtag{Agile/Scrum}
-\cvtag{Team Cohesion}
-\cvtag{Operational Excellence}
-
-\divider\bigskip
-
-\cvsection{Education \& Certifications}
-\cvevent{Certified Kubernetes Administrator (CKA)}{The Linux Foundation}{April 2024 -- April 2027}{}
-\cvevent{Certified Kubernetes Security Specialist (CKS)}{The Linux Foundation}{May 2024 -- May 2026}{}
-\cvevent{B.Sc.\ in Computer Engineering}{Major on AI and ML}{2005 -- 2010}{Simon Bolivar University}
 \end{paracol}
 
 \end{document}
