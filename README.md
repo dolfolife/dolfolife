@@ -2,7 +2,7 @@
 
 ## Who am I?
 
-- **Engineering Leadership:** Led Platform Engineering at GoDaddy and VMware, managing 13+ engineers. Delivered critical Authorization services and Eventing Runtimes, driving operational excellence via blameless post-mortems that improved lead time, reduced MTTR, and cut Sev-1 incidents by 40%.
+- **Engineering Leadership:** Led Platform Engineering at GoDaddy, VMware, and Pivotal, managing 13+ engineers. Delivered critical Authorization services and Eventing Runtimes, driving operational excellence via blameless post-mortems that improved lead time, reduced MTTR, and cut Sev-1 incidents by 40%.
 - **Technical Architecture:** Designed Fever's automation services reducing support tickets by 40% via self-service flows, and architected VMware's observability platform boosting deployment frequency by 50% for 80+ teams.
 - **Cloud-Native Expertise:** Knative maintainer and CKA/CKS certified. Built Pivotal's networking layer achieving 99.999% uptime and spearheaded organizational Kubernetes adoption for 100+ engineers.
 - You can find his latest Resume at [Releases](https://github.com/dolfolife/dolfolife/releases).
