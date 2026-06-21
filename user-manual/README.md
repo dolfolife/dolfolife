@@ -9,10 +9,10 @@ This is a guide to Dolfo's work-life style; a very quick tour of my personality 
 Thank you for taking the time to read my user manual. The purpose of this guide is to help you understand my work style, personality, and preferences so that we can collaborate more effectively and enjoyably.
 
 **About Me:** 
-I am a Software Engineering Leader with over 15 years of experience building cloud-native platforms and leading high-performing teams. 
-- **Leadership:** Previously Engineering Manager at GoDaddy and VMware, where I managed teams of 13+ engineers and delivered critical services like Authorization and Eventing Runtimes.
-- **Impact:** transform teams by driving operational excellence—cutting Sev-1 incidents by 40%, reducing MTTR, and improving lead time via blameless post-mortems.
-- **Tech:** I am a Knative maintainer and CKA/CKS certified, with deep expertise in Kubernetes, Distributed Systems, and Event-Driven Architectures.
+I am an Engineering Manager with over 15 years of experience building product-driven platforms and leading high-performing teams across regulated and enterprise markets.
+- **Leadership:** Engineering Manager at Superbet (Gaming Integrations, regulated European markets) and GoDaddy (Authorization Platform, OAuth/security), previously at VMware and Pivotal managing 13+ engineers.
+- **Impact:** Deliver product and platform outcomes — shipped an OAuth client self-service UI, in-session gaming features, and a legacy platform migration across 11+ providers. Cut Sev-1 incidents by 40% and drove 50% deployment frequency increase for 80+ teams at VMware.
+- **Tech:** Knative maintainer and CKA/CKS certified, with deep expertise in Kubernetes, Distributed Systems, Event-Driven Architectures, and OAuth/authorization infrastructure.
 
 ## Conditions I like to work in
 

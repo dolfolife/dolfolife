@@ -2,15 +2,15 @@
 
 ## Who am I?
 
-- **Engineering Leadership:** Led Platform Engineering at GoDaddy, VMware, and Pivotal, managing 13+ engineers. Delivered critical Authorization services and Eventing Runtimes, driving operational excellence via blameless post-mortems that improved lead time, reduced MTTR, and cut Sev-1 incidents by 40%.
-- **Technical Architecture:** Designed Fever's automation services reducing support tickets by 40% via self-service flows, and architected VMware's observability platform boosting deployment frequency by 50% for 80+ teams.
-- **Cloud-Native Expertise:** Knative maintainer and CKA/CKS certified. Built Pivotal's networking layer achieving 99.999% uptime and spearheaded organizational Kubernetes adoption for 100+ engineers.
+- **Organizational Scale:** Engineering Manager with experience leading 14+ engineers across product and platform teams at Superbet, GoDaddy, and VMware. Currently driving game provider integrations for regulated European markets at Superbet and previously owning the OAuth/authorization platform at GoDaddy.
+- **Product Delivery:** Shipped customer-facing products including an OAuth client self-service UI, in-session gaming features (promotions, loyalty missions, deposits, coinshop), and observability tooling adopted by 80+ product teams. Drove product direction changes in partnership with PMs, Security, and cross-functional stakeholders.
+- **Engineering Excellence:** Established OAuth as the default standard for net-new internal services via compliance-enforced adoption gates. Cut Sev-1 incidents by 40% and increased deployment frequency by 50% at VMware. Instituted MTTD/MTTR review cadences, QA strategies, and peer-manager retrospective practices.
 - You can find his latest Resume at [Releases](https://github.com/dolfolife/dolfolife/releases).
 - If you want to work with Dolfo or give him feedback you can find tips on his [User Manual](user-manual/README.md).
 
 ## Career Journey
 
-- **Engineering Manager**: GoDaddy, VMware, Pivotal
+- **Engineering Manager**: Superbet, GoDaddy, VMware, Pivotal
 - **Principal Software Engineer**: Pivotal
 - **Senior Software Engineer**: Fever, Purchasing Platform, Enova, Sears
 - **Software Engineer**: Talpor, Insperity
@@ -24,10 +24,10 @@
 
 ## Key Achievements
 
-- 🛡️ **Platform Security**: Delivered core OAuth services and improved security posture at GoDaddy.
-- 📈 **High Scale Systems**: Architected high-scale platforms at Fever (850k tx/day), GoDaddy, and VMware.
-- 💓 **Transformation**: Reduced Sev-1 incidents by 40% and increased deployments by 50% at VMware.
-- 💻 **Open Source**: Maintainer for Knative; delivered major releases and driven RFCs.
+- 👥 **Org Scale**: Led 14+ engineers across EM roles at Superbet and GoDaddy, and 13+ at VMware.
+- 🛡️ **Platform Standards**: Established OAuth as the default for all net-new internal services at GoDaddy via compliance-enforced adoption gates.
+- 📈 **Operational Excellence**: Cut Sev-1 incidents by 40% and boosted deployment frequency by 50% for 80+ teams at VMware.
+- 🌍 **Multi-market Delivery**: Leading legacy gaming platform migration across 11+ providers for Romania go-live at Superbet.
 
 ## My Life Philosophy
 
