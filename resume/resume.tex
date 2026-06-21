@@ -74,8 +74,9 @@
 \input{pubs-authoryear.cfg}
 
 \begin{document}
+\setlength{\emergencystretch}{3em}
 \name{Rodolfo Sanchez}
-\tagline{Software Engineering Leader}
+\tagline{Engineering Manager | Product \& Platform Engineering}
 
 \personalinfo{%
   \email{me@dolfo.codes}
@@ -92,12 +93,72 @@
 \divider
 \small
 \begin{itemize}
-    \item \textbf{Engineering Leadership:} Led Platform Engineering at GoDaddy and VMware, managing 13+ engineers. Delivered critical Authorization services and Eventing Runtimes, driving operational excellence via blameless post-mortems that improved lead time, reduced MTTR, and cut Sev-1 incidents by 40\%.
-    \item \textbf{Technical Architecture:} Designed Fever's automation services reducing support tickets by 40\% via self-service flows, and architected VMware's observability platform boosting deployment frequency by 50\% for 80+ teams.
-    \item \textbf{Cloud-Native Expertise:} Knative maintainer and CKA/CKS certified. Built Pivotal's networking layer achieving 99.999\% uptime and spearheaded organizational Kubernetes adoption for 100+ engineers.
+    \ifdefined\EUVERSION
+    \item \textbf{Organizational Scale:} Currently leading Engineering at Superbet (Gaming Integrations, 5 engineers + 2 contractors, regulated European markets) and previously at GoDaddy's Authorization Platform (7 engineers, OAuth/security, 2024--2025). Previously led 13+ engineers at VMware across Platform Engineering and Eventing Runtimes.
+    \else
+    \item \textbf{Organizational Scale:} Currently leading Engineering at GoDaddy's Authorization Platform (7 engineers, OAuth/security) and previously at Superbet's Gaming Integrations (5 engineers + 2 contractors, regulated European markets, 2024--2025). Previously led 13+ engineers at VMware across Platform Engineering and Eventing Runtimes.
+    \fi
+    \item \textbf{Product Delivery:} Shipped customer-facing products including an OAuth client self-service UI, in-session gaming features (promotions, loyalty missions, deposits, coinshop), and observability tooling for 80+ product teams. Drove product direction changes in partnership with PMs, Security, and cross-functional stakeholders.
+    \item \textbf{Engineering Excellence:} Established OAuth as the default standard for net-new internal services via compliance-enforced adoption gates. Cut Sev-1 incidents by 40\% and increased deployment frequency by 50\% at VMware. Instituted MTTD/MTTR review cadences, QA strategies, and peer-manager retrospective practices.
 \end{itemize}
 
 \vspace{1em}
+
+\cvsection{Experience}
+
+\ifdefined\EUVERSION
+
+\cvevent{Engineering Manager, Gaming Integrations}{Superbet}{Feb 2026 -- Present}{}
+\begin{itemize}
+\item Lead 5 engineers and 2 contractors delivering third-party game provider integrations into an in-house gaming platform across multiple regulated markets in Europe.
+\item Driving legacy platform migration for the Romania market, coordinating game catalogue onboarding across 11+ providers and aggregators ahead of go-live.
+\item Overseeing architecture initiatives to reduce integration network hops, migrate metrics infrastructure, and improve transaction pipeline reliability; building SLO dashboard and observability gap analysis.
+\item Partnering with Product and frontend teams to deliver in-session player features (promotions, loyalty missions, in-session deposits, virtual coinshop); established QA strategy during a tech stack transition and introduced on-call rotation.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineering Manager, Authorization Platform}{GoDaddy}{Jul 2024 -- 2025}{}
+\begin{itemize}
+\item Managed 4 direct reports across two teams (7 engineers) owning the company's authentication and authorization (OAuth) platform --- backend services, customer-facing client-management UI, and shared libraries used org-wide.
+\item Delivered annual readiness milestones on plan: GA of a Rust authorization library, automated cryptographic key rotation, OAuth client self-service UI supporting role-based and client-certificate auth, and a migration roadmap from a legacy token scheme to standards-based OAuth.
+\item Established OAuth as the default standard for net-new internal services by authoring a service-onboarding requirements framework and partnering with security/compliance to introduce time-bound adoption gates --- turning a documented preference into an enforced requirement.
+\item Set quarterly direction and an AI-native team strategy: platform adoption dashboard, legacy-deprecation roadmap, and AI-assisted migration tooling to accelerate other teams' onboarding.
+\item Led cross-team execution with Security, Partner-Platform, and Developer-Tooling teams; drove a major identity feature's product direction change; instituted MTTD/MTTR review cadence and peer-manager retrospective practice.
+\end{itemize}
+
+\else
+
+\cvevent{Software Engineering Manager, Authorization Platform}{GoDaddy}{Jul 2025 -- Present}{}
+\begin{itemize}
+\item Manage 4 direct reports across two teams (7 engineers) owning the company's authentication and authorization (OAuth) platform --- backend services, customer-facing client-management UI, and shared libraries used org-wide.
+\item Delivered annual readiness milestones on plan: GA of a Rust authorization library, automated cryptographic key rotation, OAuth client self-service UI supporting role-based and client-certificate auth, and a migration roadmap from a legacy token scheme to standards-based OAuth.
+\item Established OAuth as the default standard for net-new internal services by authoring a service-onboarding requirements framework and partnering with security/compliance to introduce time-bound adoption gates --- turning a documented preference into an enforced requirement.
+\item Set quarterly direction and an AI-native team strategy: platform adoption dashboard, legacy-deprecation roadmap, and AI-assisted migration tooling to accelerate other teams' onboarding.
+\item Led cross-team execution with Security, Partner-Platform, and Developer-Tooling teams; drove a major identity feature's product direction change; instituted MTTD/MTTR review cadence and peer-manager retrospective practice.
+\end{itemize}
+
+\divider
+
+\cvevent{Engineering Manager, Gaming Integrations}{Superbet}{2024 -- Jul 2025}{}
+\begin{itemize}
+\item Led 5 engineers and 2 contractors delivering third-party game provider integrations into an in-house gaming platform across multiple regulated markets in Europe.
+\item Drove legacy platform migration for the Romania market, coordinating game catalogue onboarding across 11+ providers and aggregators ahead of go-live.
+\item Oversaw architecture initiatives to reduce integration network hops, migrate metrics infrastructure, and improve transaction pipeline reliability; built SLO dashboard and observability gap analysis.
+\item Partnered with Product and frontend teams to deliver in-session player features (promotions, loyalty missions, in-session deposits, virtual coinshop); established QA strategy during a tech stack transition and introduced on-call rotation.
+\end{itemize}
+
+\fi
+
+\divider
+
+\cvevent{Engineering Manager, Platform Engineering}{VMware}{2020 -- 2024}{}
+\begin{itemize}
+\item Managed Platform Engineering teams (13+ engineers) owning Eventing Runtimes and observability infrastructure; open-source EM for Knative, delivering major releases and driving adopted RFCs.
+\item Architected and delivered an observability platform that increased deployment frequency by 50\% for 80+ product teams.
+\item Drove operational excellence via blameless post-mortems, cutting Sev-1 incidents by 40\% and reducing MTTR.
+\item Spearheaded organizational Kubernetes adoption for 100+ engineers; built Pivotal's networking layer achieving 99.999\% uptime.
+\end{itemize}
 
 \vspace{0.5em}
 
@@ -110,6 +171,7 @@
 
 % ----- LEFT COLUMN -----
 \cvsection{Career Journey}
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[
     y=1.2cm, % Vertical space between rows
     x=1cm,   % Base unit
@@ -155,6 +217,11 @@
 \node[jobnode, xshift=4pt, anchor=south west] (godaddy) at (vmware.south east) {
     \includegraphics[height=1.8em]{godaddy.png}\\
     GoDaddy
+};
+% Superbet - Next to GoDaddy
+\node[jobnode, xshift=4pt, anchor=south west] (superbet) at (godaddy.south east) {
+    \includegraphics[height=1.2em]{superbet.png}\\
+    Superbet
 };
 
 % --- ROW 3: PRINCIPAL SOFTWARE ENGINEER ---
@@ -204,7 +271,8 @@
     Talpor
 };
 
-\end{tikzpicture}
+\end{tikzpicture}%
+}%
 \par
 \vspace{1em}
 
@@ -222,9 +290,9 @@
 
 \cvsubsection{Architecture \& Cloud}
 \cvtag{Domain Driven Design}
-\cvtag{Kubernetes}
+\cvtag{Kubernetes}\par
 \cvtag{Platform Engineering}
-\cvtag{Event-Driven Arch.}
+\cvtag{Event-Driven Arch.}\par
 \cvtag{Distributed Systems}
 \cvtag{Authorization/OAuth}
 
@@ -243,7 +311,7 @@
 \cvsubsection{Technology Stack}
 \cvtag{Go (Golang)}
 \cvtag{Python}
-\cvtag{Java/Kotlin}
+\cvtag{Java/Kotlin}\par
 \cvtag{JavaScript/TypeScript}
 
 
@@ -260,29 +328,29 @@
 
 % Adapting height to save space if needed
 \wheelchart{1.2cm}{0.4cm}{%
-  6/8em/accent!40/Strategy,
-  3/8em/accent!30/Learning,
-  8/8em/accent!60/Leading,
-  1/6em/accent/Coffee,
-  5/8em/accent/Coding,
-  1/6em/accent!20/Family
+  6/6em/accent!40/Strategy,
+  3/6em/accent!30/Learning,
+  8/6em/accent!60/Leading,
+  1/5em/accent/Coffee,
+  5/6em/accent/Coding,
+  1/5em/accent!20/Family
 }
 
 \cvsection{Key Achievements}
 
-\cvachievement{\faShield*}{Platform Security}{Delivered core OAuth services and improved security posture at GoDaddy.}
+\cvachievement{\faUsers}{Org Scale}{Managed 13+ engineers across two teams at VMware.}
 
 \divider
 
-\cvachievement{\faChartLine}{High Scale Systems}{Architected high-scale platforms at Fever (850k tx/day), GoDaddy, and VMware.}
+\cvachievement{\faShield*}{Platform Standards}{Established OAuth as the default for all net-new internal services at GoDaddy via compliance-enforced adoption gates.}
 
 \divider
 
-\cvachievement{\faHeartbeat}{Transformation}{Reduced Sev-1 incidents by 40\% and increased deployments by 50\% at VMware.}
+\cvachievement{\faChartLine}{Operational Excellence}{Cut Sev-1 incidents by 40\% and boosted deployment frequency by 50\% for 80+ teams at VMware.}
 
 \divider
 
-\cvachievement{\faCode}{Open Source}{Maintainer for Knative; delivered major releases and driven RFCs.}
+\cvachievement{\faGlobe}{Multi-market Delivery}{Leading legacy gaming platform migration across 11+ providers for Romania go-live at Superbet.}
 \divider
 
 \medskip
